@@ -150,4 +150,42 @@ Automated deployment and testing workflows using tools like GitHub Actions and D
 
 ### 🛡️ Security Measures
 Protects the platform from vulnerabilities using best practices like input validation, encrypted passwords, and access control. Ensures the safety of both user data and transactions.
+## 🔐 API Security
+
+Ensuring the security of backend APIs is critical to protect user data, prevent abuse, and maintain trust in the platform. Below are the key security measures that will be implemented:
+
+### 🔑 Authentication
+Only registered users should access certain features like bookings and reviews. We’ll implement token-based authentication (e.g., JWT) to verify user identity with each API request.
+
+> **Why?** Prevents unauthorized users from accessing protected resources like user dashboards or host tools.
+
+### 🛂 Authorization
+We’ll implement role-based access control to ensure that only specific users (e.g., hosts or admins) can perform certain actions like adding a property or managing users.
+
+> **Why?** Prevents guests from modifying or deleting listings they don’t own.
+
+### 🚫 Rate Limiting
+APIs will be protected from abuse or brute-force attacks by limiting how many requests a user or IP can make in a given time.
+
+> **Why?** Helps protect login and payment endpoints from being spammed or attacked.
+
+### 🔒 Data Encryption
+Sensitive data like passwords and payment information will be securely encrypted using industry standards (e.g., bcrypt for passwords, HTTPS for all API traffic).
+
+> **Why?** Prevents data leaks and secures private user information during transmission and storage.
+
+### 🧪 Input Validation
+All user input (e.g., forms, search queries) will be validated to prevent malicious injections (e.g., SQL injection, XSS).
+
+> **Why?** Protects the database and frontend from being manipulated or attacked via crafted input.
+
+### 🧼 CORS Configuration
+Cross-Origin Resource Sharing (CORS) policies will be set up to allow safe communication between frontend and backend while blocking unauthorized origins.
+
+> **Why?** Prevents frontend attacks from untrusted websites or sources.
+
+---
+
+These security practices ensure the system is safe, stable, and trustworthy for all users and transactions.
+
 

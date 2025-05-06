@@ -39,3 +39,33 @@ Writes clean documentation for other developers and users. Maintains the README,
 
 ### 🧑‍💻 Team Lead / Project Manager
 Coordinates the team, sets deadlines, assigns tasks, and ensures that the team follows best practices. Also communicates between the team and external stakeholders (if any).
+## Technology Stack
+
+Here are the main technologies used in this project and their purposes:
+
+### 🐍 Django
+A high-level Python web framework used to build backend services quickly. It handles routing, database models, authentication, and more.
+
+### 🛢️ MySQL
+A relational database system used to store structured data like users, listings, and bookings. Django connects to this to fetch or save data.
+
+### 🔌 Django REST Framework (DRF)
+An extension of Django that makes it easier to build RESTful APIs. It helps serialize data and create CRUD operations efficiently.
+
+### 📦 Docker
+A containerization tool that packages your app and its environment into isolated units, making it easier to develop and deploy.
+
+### 🧪 GitHub Actions
+A CI/CD tool that automates testing, building, and deploying your code whenever you push updates.
+
+### 🔐 JWT (or other auth method)
+Used for user authentication and session management. Ensures only authorized users can access certain resources.
+
+### 🧬 GraphQL *(if included)*
+An alternative to REST APIs that lets clients request only the data they need. It improves flexibility and reduces over-fetching.
+
+### 📝 Markdown
+Used to write documentation like this README. It’s a lightweight syntax for formatting plain text.
+
+### 🧠 Git & GitHub
+Version control tools used to track changes, collaborate with a team, and store code safely online.

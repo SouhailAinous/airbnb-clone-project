@@ -69,3 +69,57 @@ Used to write documentation like this README. It’s a lightweight syntax for fo
 
 ### 🧠 Git & GitHub
 Version control tools used to track changes, collaborate with a team, and store code safely online.
+## 🗄️ Database Design
+
+Here are the main entities (tables) used in the Airbnb Clone project, along with their key fields and relationships:
+
+### 👤 Users
+Stores information about people using the platform.
+- `id`: Unique identifier
+- `name`: Full name
+- `email`: Email address
+- `password_hash`: Encrypted password
+- `is_host`: Boolean to check if user is a host
+
+### 🏠 Properties
+Represents the listings available for booking.
+- `id`: Unique identifier
+- `owner_id`: Foreign key to Users (who owns this property)
+- `title`: Name of the listing
+- `location`: City and address
+- `price_per_night`: Cost of booking per night
+
+### 📅 Bookings
+Tracks who booked which property and when.
+- `id`: Unique identifier
+- `user_id`: Foreign key to Users
+- `property_id`: Foreign key to Properties
+- `start_date`: When the booking starts
+- `end_date`: When the booking ends
+- `total_price`: Calculated cost
+
+### 💬 Reviews
+Allows users to leave feedback on properties.
+- `id`: Unique identifier
+- `user_id`: Foreign key to Users
+- `property_id`: Foreign key to Properties
+- `rating`: Numerical score (e.g., 1 to 5)
+- `comment`: Text feedback
+
+### 💳 Payments
+Stores transaction data for bookings.
+- `id`: Unique identifier
+- `booking_id`: Foreign key to Bookings
+- `amount`: Total amount paid
+- `status`: Paid / Failed / Refunded
+- `payment_method`: e.g., credit card, PayPal
+
+---
+
+### 🔗 Entity Relationships
+
+- A **User** can create multiple **Properties** (1-to-many)
+- A **Property** can have multiple **Bookings** (1-to-many)
+- A **Booking** belongs to one **User** and one **Property**
+- A **User** can leave multiple **Reviews** for different **Properties**
+- A **Payment** is linked to one **Booking**

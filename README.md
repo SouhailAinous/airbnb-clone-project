@@ -187,5 +187,36 @@ Cross-Origin Resource Sharing (CORS) policies will be set up to allow safe commu
 ---
 
 These security practices ensure the system is safe, stable, and trustworthy for all users and transactions.
+## ⚙️ CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment**. It is a development workflow that automates the process of testing, building, and deploying code changes. When a developer pushes new code to the repository, automated workflows ensure the code is tested and deployed quickly and safely.
+
+> **CI (Continuous Integration)**: Automatically runs tests and checks when code is pushed, helping teams detect bugs early.  
+> **CD (Continuous Deployment)**: Automatically delivers tested changes to a production or staging environment.
+
+---
+
+### Why It Matters
+
+- Ensures **code quality** through automated tests.
+- Reduces **manual errors** in deployment.
+- Allows **faster releases** and more frequent updates.
+- Encourages **team collaboration** and code reviews using pull requests.
+
+---
+
+### Tools Used in This Project
+
+- **GitHub Actions**: Automates testing, linting, and deployment workflows directly from GitHub.
+- **Docker**: Provides consistent environments by containerizing the app across development, testing, and production.
+- **Docker Compose**: Helps orchestrate services like the backend app, database, and more.
+- **Heroku / Render / Railway (Optional)**: Can be used for simplified hosting and continuous delivery.
+
+---
+
+CI/CD pipelines make the development cycle more reliable and efficient — essential when working on a large, scalable project like this one.
+
 
 

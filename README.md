@@ -123,3 +123,31 @@ Stores transaction data for bookings.
 - A **Booking** belongs to one **User** and one **Property**
 - A **User** can leave multiple **Reviews** for different **Properties**
 - A **Payment** is linked to one **Booking**
+  ## 🧩 Feature Breakdown
+
+Here are the core features of the Airbnb Clone and how they contribute to the platform:
+
+### 👤 User Management
+Allows users to register, log in, update their profiles, and manage their account settings. Includes secure authentication, session management, and user role (guest or host) identification.
+
+### 🏘️ Property Management
+Hosts can create, update, and delete property listings. Listings include details like location, images, amenities, pricing, and availability. This feature is essential for allowing guests to browse and find suitable places.
+
+### 📅 Booking System
+Enables guests to book available properties for specific dates. The system handles booking creation, date validation (no double bookings), price calculation, and cancellation policies.
+
+### 💳 Payment Integration
+Handles secure payment processing when a guest books a property. Supports payment methods like credit cards and tracks the status of each transaction.
+
+### 💬 Review & Rating System
+After a stay, guests can leave reviews and ratings for properties. This helps maintain trust and quality across the platform by allowing feedback.
+
+### 🔐 Authentication & Authorization
+Only logged-in users can access certain features (e.g., booking, reviewing, or listing properties). Admins and hosts have different levels of access.
+
+### 🚀 CI/CD Integration
+Automated deployment and testing workflows using tools like GitHub Actions and Docker. Ensures consistent development, testing, and production environments.
+
+### 🛡️ Security Measures
+Protects the platform from vulnerabilities using best practices like input validation, encrypted passwords, and access control. Ensures the safety of both user data and transactions.
+
